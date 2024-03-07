@@ -83,3 +83,12 @@ class myPairm {
         this.third = _third;
     }
 }
+
+
+Time Complexity: O(NxM + NxMx4) ~ O(N x M)
+
+For the worst case, the BFS function will be called for (N x M) nodes, and for every node, we are traversing for 4 neighbors, so it will take O(N x M x 4) time.
+
+Space Complexity: O(N x M) + O(N x M) + O(N x M) ~ O(N x M)
+
+O(N x M) for the visited array, distance matrix, and queue space takes up N x M locations at max. 
